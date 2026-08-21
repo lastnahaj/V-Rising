@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>SanguineRelay</AssemblyName>
+    <RootNamespace>SanguineRelay</RootNamespace>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Description>A dedicated-server Discord integration for V Rising.</Description>
+    <PackageId>SanguineRelay</PackageId>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="$(MSBuildThisFileDirectory)..\..\.references\BepInEx\0Harmony.dll" Private="false" />
+    <Reference Include="BepInEx.Core" HintPath="$(MSBuildThisFileDirectory)..\..\.references\BepInEx\BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(MSBuildThisFileDirectory)..\..\.references\BepInEx\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Common" HintPath="$(MSBuildThisFileDirectory)..\..\.references\BepInEx\Il2CppInterop.Common.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(MSBuildThisFileDirectory)..\..\.references\BepInEx\Il2CppInterop.Runtime.dll" Private="false" />
+    <PackageReference Include="Discord.Net.WebSocket" Version="3.18.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_VampireReference Include="$(MSBuildThisFileDirectory)..\..\.references\VRising-1.1.12\*.dll"
+                       Exclude="$(MSBuildThisFileDirectory)..\..\.references\VRising-1.1.12\Newtonsoft.Json.dll" />
+    <Reference Include="@(_VampireReference)" Private="false" />
+  </ItemGroup>
+</Project>

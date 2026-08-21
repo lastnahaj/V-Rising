@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Shikaru</Authors>
+    <Company>InfiniteGamingServers</Company>
+    <Copyright>Copyright (c) 2026 Shikaru x InfiniteGamingServers. All Rights Reserved.</Copyright>
+    <RepositoryUrl></RepositoryUrl>
+    <Deterministic>true</Deterministic>
+    <DeterministicSourcePaths>true</DeterministicSourcePaths>
+    <PathMap>$(MSBuildThisFileDirectory)=/_/SanguineRelay/</PathMap>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <DebugSymbols Condition="'$(Configuration)' == 'Release'">false</DebugSymbols>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+</Project>

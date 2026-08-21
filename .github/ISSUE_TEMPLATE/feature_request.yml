@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a focused SanguineRelay improvement.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the administrator or player problem first. Do not include credentials or private server information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What limitation or operational problem does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the desired behavior without assuming a specific implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe current workarounds or smaller alternatives.
+  - type: dropdown
+    id: compatibility
+    attributes:
+      label: Client impact
+      options:
+        - Dedicated-server change
+        - Would require client changes
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This request contains no token, authorization header, private configuration, or other credential.
+          required: true

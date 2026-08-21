@@ -1,0 +1,9 @@
+{
+  "name": "SanguineRelay",
+  "version_number": "1.0.0",
+  "website_url": "",
+  "description": "A dedicated-server Discord integration for V Rising.",
+  "dependencies": [
+    "BepInEx-BepInExPack_V_Rising-1.733.2"
+  ]
+}

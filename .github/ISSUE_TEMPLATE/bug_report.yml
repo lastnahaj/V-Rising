@@ -1,0 +1,83 @@
+name: Bug report
+description: Report reproducible SanguineRelay behavior or a compatibility problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve SanguineRelay. Never paste a Discord bot token, authorization header, populated production configuration, private server address, or other credential.
+  - type: input
+    id: relay_version
+    attributes:
+      label: SanguineRelay version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: V Rising dedicated-server version
+      placeholder: 1.1.x build number
+    validations:
+      required: true
+  - type: input
+    id: bepinex_version
+    attributes:
+      label: BepInExPack V Rising version
+      placeholder: 1.733.2
+    validations:
+      required: true
+  - type: dropdown
+    id: modules
+    attributes:
+      label: Affected area
+      multiple: true
+      options:
+        - Startup or shutdown
+        - Game-to-Discord chat
+        - Discord-to-game chat
+        - Player state or events
+        - Status embed
+        - Discord presence
+        - Voice player counter
+        - Slash commands or permissions
+        - Audit logging
+        - Configuration or persistence
+        - Packaging or installation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Explain what happened and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Start the dedicated server with...
+        2. Join with...
+        3. Send...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized SanguineRelay logs
+      description: Include only relevant lines. Redact credentials, private IDs, and addresses.
+      render: text
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Credential check
+      options:
+        - label: I verified that this report contains no bot token, authorization header, private configuration, or other credential.
+          required: true
+        - label: I understand that compile/test success does not establish live V Rising hook compatibility.
+          required: true
