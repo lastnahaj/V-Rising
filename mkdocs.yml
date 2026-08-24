@@ -1,0 +1,193 @@
+site_name: Bloodcraft Wiki
+site_description: Community Bloodcraft documentation and BloodcraftExpansion content for V Rising
+site_url: https://lastnahaj.github.io/V-Rising/
+
+repo_name: lastnahaj/V-Rising
+repo_url: https://github.com/lastnahaj/V-Rising
+
+docs_dir: BloodcraftExpansion/docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  custom_dir: BloodcraftExpansion/overrides
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Use light theme
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Use dark theme
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+    - search.share
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+hooks:
+  - BloodcraftExpansion/tools/mkdocs_hooks.py
+
+extra_css:
+  - stylesheets/gothic.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/INSTALLATION.md
+      - Quick Start: getting-started/QUICK-START.md
+      - Eclipse: getting-started/ECLIPSE.md
+      - Server Setup: getting-started/SERVER-SETUP.md
+  - Core Systems:
+      - Leveling: systems/LEVELING.md
+      - Weapon Expertise: systems/WEAPON-EXPERTISE.md
+      - Blood Legacies: systems/BLOOD-LEGACIES.md
+      - Classes: systems/CLASSES.md
+      - Familiars: systems/FAMILIARS.md
+      - Professions: systems/PROFESSIONS.md
+      - Quests: systems/QUESTS.md
+      - Prestige: systems/PRESTIGE.md
+      - Endgame: systems/ENDGAME.md
+  - Classes:
+      - Overview: classes/README.md
+      - Blood Knight: classes/BLOOD-KNIGHT.md
+      - Demon Hunter: classes/DEMON-HUNTER.md
+      - Vampire Lord: classes/VAMPIRE-LORD.md
+      - Shadow Blade: classes/SHADOW-BLADE.md
+      - Arcane Sorcerer: classes/ARCANE-SORCERER.md
+      - Death Mage: classes/DEATH-MAGE.md
+  - Familiars:
+      - Overview: familiars/README.md
+      - Unlocking: familiars/UNLOCKING.md
+      - Leveling: familiars/LEVELING.md
+      - Prestige: familiars/PRESTIGE.md
+      - Shinies: familiars/SHINIES.md
+      - Boxes: familiars/BOXES.md
+      - Battle Groups: familiars/BATTLE-GROUPS.md
+      - V Blood Echoes: familiars/V-BLOOD-ECHOES.md
+      - Administration: familiars/ADMINISTRATION.md
+  - Professions:
+      - Overview: professions/README.md
+      - Mining: professions/MINING.md
+      - Woodcutting: professions/WOODCUTTING.md
+      - Harvesting: professions/HARVESTING.md
+      - Fishing: professions/FISHING.md
+      - Alchemy: professions/ALCHEMY.md
+      - Blacksmithing: professions/BLACKSMITHING.md
+      - Enchanting: professions/ENCHANTING.md
+      - Tailoring: professions/TAILORING.md
+  - Progression:
+      - Overview: progression/README.md
+      - Expertise Stats: progression/EXPERTISE-STATS.md
+      - Legacy Stats: progression/LEGACY-STATS.md
+      - Prestige Types: progression/PRESTIGE-TYPES.md
+      - Exo Prestige: progression/EXO-PRESTIGE.md
+      - Leveling Guide: progression/LEVELING-GUIDE.md
+  - Endgame:
+      - Overview: endgame/README.md
+      - Elite Primal Rifts: endgame/ELITE-PRIMAL-RIFTS.md
+      - Elite Shard Bearers: endgame/ELITE-SHARD-BEARERS.md
+      - Nightmare Mode: endgame/NIGHTMARE-MODE.md
+      - Exo Forms: endgame/EXO-FORMS.md
+      - Primal Echoes: endgame/PRIMAL-ECHOES.md
+  - Weapons:
+      - Overview: weapons/README.md
+      - Expertise: weapons/EXPERTISE.md
+      - Unarmed Slots: weapons/UNARMED-SLOTS.md
+      - Shift Slot: weapons/SHIFT-SLOT.md
+      - Bleeding Edge: weapons/BLEEDING-EDGE.md
+  - Quests:
+      - Overview: quests/README.md
+      - Daily Quests: quests/DAILY-QUESTS.md
+      - Weekly Quests: quests/WEEKLY-QUESTS.md
+      - Rewards: quests/REWARDS.md
+      - Rerolling: quests/REROLLING.md
+  - Items & Recipes:
+      - Extra Recipes: items/EXTRA-RECIPES.md
+      - Primal Jewels: items/PRIMAL-JEWELS.md
+      - Vampiric Dust: items/VAMPIRIC-DUST.md
+      - Currencies: items/CURRENCIES.md
+  - Server Admin:
+      - Overview: server-admin/README.md
+      - Recommended Configuration: server-admin/RECOMMENDED-CONFIG.md
+      - PvE Configuration: server-admin/PVE-CONFIG.md
+      - PvP Configuration: server-admin/PVP-CONFIG.md
+      - High Progression Configuration: server-admin/HIGH-PROGRESSION-CONFIG.md
+      - Admin Commands: server-admin/ADMIN-COMMANDS.md
+      - Player Data: server-admin/PLAYER-DATA.md
+      - Troubleshooting: server-admin/TROUBLESHOOTING.md
+  - Reference:
+      - Commands: reference/COMMANDS.md
+      - Player Commands: reference/PLAYER-COMMANDS.md
+      - Admin Commands: reference/ADMIN-COMMANDS.md
+      - Configuration:
+          - Overview: reference/CONFIGURATION.md
+          - General: reference/CONFIG-GENERAL.md
+          - Leveling: reference/CONFIG-LEVELING.md
+          - Expertise: reference/CONFIG-EXPERTISE.md
+          - Legacies: reference/CONFIG-LEGACIES.md
+          - Classes: reference/CONFIG-CLASSES.md
+          - Familiars: reference/CONFIG-FAMILIARS.md
+          - Prestige: reference/CONFIG-PRESTIGE.md
+          - Professions: reference/CONFIG-PROFESSIONS.md
+          - Quests: reference/CONFIG-QUESTS.md
+      - Glossary: reference/GLOSSARY.md
+  - Compatibility:
+      - Overview: compatibility/README.md
+      - Eclipse: compatibility/ECLIPSE.md
+      - Recommended Mods: compatibility/RECOMMENDED-MODS.md
+      - Known Issues: compatibility/KNOWN-ISSUES.md
+  - BloodcraftExpansion:
+      - Overview: custom/README.md
+      - Bloodlines & Classes: custom/BLOODLINES-AND-CLASSES.md
+      - Bloodlines: custom/BLOODLINES.md
+      - Custom Classes: custom/CUSTOM-CLASSES.md
+      - Specializations: custom/SPECIALIZATIONS.md
+      - Synergies: custom/SYNERGIES.md
+      - Roadmap: custom/ROADMAP.md
+      - Future Content:
+          - Encounters: custom/encounters/README.md
+          - Bosses: custom/bosses/README.md
+          - Enemy Affixes: custom/enemy-affixes/README.md
+          - Relics: custom/relics/README.md
+          - Factions: custom/factions/README.md
+          - World Events: custom/world-events/README.md
+          - Bounties: custom/bounties/README.md
+          - Dungeons: custom/dungeons/README.md
+  - About:
+      - Sources: SOURCES.md
+      - Wiki Changelog: CHANGELOG.md
+      - Implementation Notes: IMPLEMENTATION_NOTES.md
+      - Artwork Notes: ASSET_NOTES.md

@@ -2,7 +2,7 @@
 
 **Master the Blood. Shape the Vampire. Rule Vardoran.**
 
-![Bloodcraft Wiki — custom documentation artwork](assets/custom/bloodlines-classes-hero.png)
+![Bloodcraft Wiki — custom documentation artwork](assets/custom/bloodlines-classes-hero.png){ .wiki-hero }
 
 *The Gothic artwork on this site was created for BloodcraftExpansion documentation; it is not upstream Bloodcraft artwork.*
 
@@ -16,13 +16,39 @@ This community wiki has two clearly separated areas:
 
 ## Choose a path
 
-| Path | Start here |
-|---|---|
-| **New Player** | [Install Bloodcraft](getting-started/INSTALLATION.md), then follow the [Quick Start](getting-started/QUICK-START.md). |
-| **Character Progression** | Learn [Leveling](systems/LEVELING.md), [Weapon Expertise](systems/WEAPON-EXPERTISE.md), [Blood Legacies](systems/BLOOD-LEGACIES.md), [Classes](systems/CLASSES.md), and [Prestige](systems/PRESTIGE.md). |
-| **Familiars & Professions** | Explore [Familiars](familiars/README.md) and the eight [Professions](professions/README.md). |
-| **Server Administrator** | Use [Server Setup](getting-started/SERVER-SETUP.md), [Configuration](reference/CONFIGURATION.md), [Admin Commands](reference/ADMIN-COMMANDS.md), and [Troubleshooting](server-admin/TROUBLESHOOTING.md). |
-| **BloodcraftExpansion** | Enter the clearly labeled [custom content hub](custom/README.md). |
+<div class="grid cards" markdown>
+
+-   **New Player**
+
+    ---
+
+    [Install Bloodcraft](getting-started/INSTALLATION.md), then follow the [Quick Start](getting-started/QUICK-START.md).
+
+-   **Character Progression**
+
+    ---
+
+    Learn [Leveling](systems/LEVELING.md), [Expertise](systems/WEAPON-EXPERTISE.md), [Blood Legacies](systems/BLOOD-LEGACIES.md), [Classes](systems/CLASSES.md), and [Prestige](systems/PRESTIGE.md).
+
+-   **Familiars & Professions**
+
+    ---
+
+    Explore the complete [Familiar](familiars/README.md) and [Profession](professions/README.md) guides.
+
+-   **Server Administrator**
+
+    ---
+
+    Use [Server Setup](getting-started/SERVER-SETUP.md), [Configuration](reference/CONFIGURATION.md), [Admin Commands](reference/ADMIN-COMMANDS.md), and [Troubleshooting](server-admin/TROUBLESHOOTING.md).
+
+-   **BloodcraftExpansion**
+
+    ---
+
+    Enter the clearly labeled [custom content hub](custom/README.md) for Bloodlines, custom Classes, and future RPG systems.
+
+</div>
 
 ## Upstream Bloodcraft systems
 

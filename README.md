@@ -19,4 +19,5 @@ Version 1.0.0 is a prerelease pending live hook validation on the target V Risin
 Community documentation for Bloodcraft plus custom RPG expansion content for Bloodcraft-based V Rising servers.
 
 - [Bloodcraft Wiki](BloodcraftExpansion/docs/HOME.md)
+- [Published wiki](https://lastnahaj.github.io/V-Rising/)
 - [Bloodlines & Classes](BloodcraftExpansion/docs/custom/BLOODLINES-AND-CLASSES.md)

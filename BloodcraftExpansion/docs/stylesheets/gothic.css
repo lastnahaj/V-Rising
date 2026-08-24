@@ -1,0 +1,184 @@
+:root {
+  --bloodcraft-black: #100d11;
+  --bloodcraft-charcoal: #1a151b;
+  --bloodcraft-panel: #241b22;
+  --bloodcraft-crimson: #8e2434;
+  --bloodcraft-red: #bd3346;
+  --bloodcraft-gold: #c5a15a;
+  --bloodcraft-bone: #eee5d5;
+  --bloodcraft-purple: #8f6ac8;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: var(--bloodcraft-black);
+  --md-default-fg-color: var(--bloodcraft-bone);
+  --md-default-fg-color--light: #cbbfb2;
+  --md-primary-fg-color: #22151b;
+  --md-primary-bg-color: var(--bloodcraft-bone);
+  --md-accent-fg-color: var(--bloodcraft-gold);
+  --md-code-bg-color: #171217;
+  --md-code-fg-color: #eadfce;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #531823;
+  --md-accent-fg-color: #7e2130;
+  --md-typeset-a-color: #842738;
+}
+
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+  background: #fffaf2;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background: #652431;
+}
+
+.md-header,
+.md-tabs {
+  background: linear-gradient(90deg, #160f13, #481520 52%, #160f13);
+  border-bottom: 1px solid rgba(197, 161, 90, 0.42);
+}
+
+.md-main__inner {
+  margin-top: 1rem;
+}
+
+.md-main {
+  background-image:
+    radial-gradient(circle at 82% 8%, rgba(95, 36, 91, 0.12), transparent 28rem),
+    radial-gradient(circle at 18% 0%, rgba(142, 36, 52, 0.1), transparent 26rem);
+}
+
+.md-content__inner > h1 {
+  color: var(--bloodcraft-gold);
+  letter-spacing: 0.025em;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid rgba(142, 36, 52, 0.45);
+  padding-bottom: 0.22rem;
+}
+
+.md-typeset a {
+  text-underline-offset: 0.16em;
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid rgba(197, 161, 90, 0.24);
+  box-shadow: 0 0.35rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(111, 28, 42, 0.32);
+  color: var(--bloodcraft-bone);
+}
+
+.md-typeset img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border: 1px solid rgba(197, 161, 90, 0.3);
+  border-radius: 0.25rem;
+}
+
+.md-typeset .wiki-hero {
+  width: min(100%, 58rem);
+  max-height: 31rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 1.1rem 2.8rem rgba(0, 0, 0, 0.34);
+}
+
+.md-typeset .grid.cards > ul > li {
+  background: linear-gradient(145deg, rgba(71, 27, 38, 0.22), rgba(30, 22, 30, 0.72));
+  border-color: rgba(197, 161, 90, 0.28);
+  box-shadow: 0 0.45rem 1.4rem rgba(0, 0, 0, 0.18);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: rgba(189, 51, 70, 0.72);
+  box-shadow: 0 0.55rem 1.6rem rgba(92, 22, 36, 0.24);
+}
+
+.md-search__form {
+  border: 1px solid rgba(197, 161, 90, 0.16);
+}
+
+.md-footer {
+  background: #120d11;
+  border-top: 1px solid rgba(197, 161, 90, 0.2);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  background: color-mix(in srgb, var(--bloodcraft-panel) 72%, transparent);
+  border-color: var(--bloodcraft-crimson);
+}
+
+.md-typeset .admonition.version,
+.md-typeset details.version {
+  border-color: var(--bloodcraft-gold);
+}
+
+.md-typeset .admonition.bloodcraft,
+.md-typeset details.bloodcraft {
+  border-color: var(--bloodcraft-crimson);
+}
+
+.md-typeset .bloodcraft > .admonition-title,
+.md-typeset .bloodcraft > summary {
+  background: rgba(142, 36, 52, 0.15);
+}
+
+.md-typeset .version > .admonition-title,
+.md-typeset .version > summary {
+  background: rgba(197, 161, 90, 0.14);
+}
+
+.md-typeset .admonition.expansion,
+.md-typeset details.expansion {
+  border-color: var(--bloodcraft-purple);
+}
+
+.md-typeset .expansion > .admonition-title,
+.md-typeset .expansion > summary {
+  background: rgba(143, 106, 200, 0.15);
+}
+
+.md-typeset .admonition.experimental,
+.md-typeset details.experimental {
+  border-color: #d67b37;
+}
+
+.md-typeset .experimental > .admonition-title,
+.md-typeset .experimental > summary {
+  background: rgba(214, 123, 55, 0.16);
+}
+
+.md-typeset .admonition.admin,
+.md-typeset details.admin,
+.md-typeset .admonition.deprecated,
+.md-typeset details.deprecated {
+  border-color: var(--bloodcraft-red);
+}
+
+.md-typeset .admin > .admonition-title,
+.md-typeset .admin > summary,
+.md-typeset .deprecated > .admonition-title,
+.md-typeset .deprecated > summary {
+  background: rgba(189, 51, 70, 0.15);
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-typeset table:not([class]) {
+    font-size: 0.72rem;
+  }
+
+  .md-content__inner {
+    padding-inline: 0.25rem;
+  }
+}
