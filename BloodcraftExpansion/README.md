@@ -1,23 +1,16 @@
-# BloodcraftExpansion
+# Bloodcraft Wiki & Expansion
 
-Design and implementation workspace for custom RPG systems intended to complement Bloodcraft-based V Rising servers.
+A community-maintained Bloodcraft reference and custom expansion workspace for V Rising.
 
-Current design areas include:
+## Bloodcraft Wiki
 
-- Vampire Bloodlines
-- Custom Classes
-- Specializations
-- Class resource systems
-- Bloodline × Class synergies
-- Progression and respecialization
-- Future world-content integration
+Player guides, server administration, commands, configuration, and system references for the upstream Bloodcraft mod. The reference is versioned and sourced from the upstream project.
 
-## Documentation
+## BloodcraftExpansion
 
-- [Bloodlines & Classes](docs/BLOODLINES_AND_CLASSES.md)
+Custom Bloodlines, Classes, specializations, synergies, and future server content designed to build on Bloodcraft. Custom pages are clearly labeled and describe planned content unless implementation files say otherwise.
 
-## Status
+- [Open the Bloodcraft Wiki](docs/HOME.md)
+- [Bloodlines & Classes](docs/custom/BLOODLINES-AND-CLASSES.md)
 
-This project is currently in the design and prototyping phase. Features described in the documentation should not be considered implemented until corresponding source code exists.
-
-BloodcraftExpansion is an independent community project and is not officially affiliated with V Rising, Stunlock Studios, or Bloodcraft.
+This is an independent community project and is not officially affiliated with V Rising, Stunlock Studios, or Bloodcraft.

@@ -1,6 +1,9 @@
 # Bloodlines & Classes
 
-![Bloodlines & Classes](assets/bloodlines-classes-hero.png)
+!!! expansion "BloodcraftExpansion Content"
+    This page describes custom content designed for this project and is not part of upstream Bloodcraft unless explicitly stated otherwise.
+
+![Bloodlines & Classes](../assets/custom/bloodlines-classes-hero.png)
 
 > **Status:** Expansion design proposal. This page defines target gameplay and content; it does **not** claim these systems are currently implemented.
 >
@@ -10,7 +13,7 @@
 
 The expansion separates character identity into four layers:
 
-![Character Identity Stack](assets/identity-stack.png)
+![Character Identity Stack](../assets/custom/identity-stack.png)
 
 1. **Bloodline** — what the vampire *is*. Permanent strengths, weaknesses, feeding interactions, racial abilities and lineage progression.
 2. **Class** — how the vampire *fights*. A resource loop, combat rhythm, signature mechanic and role.
@@ -23,13 +26,13 @@ The design deliberately avoids hard race/class locks. A bloodline may synergize 
 
 # Bloodlines
 
-![Vampire Bloodlines](assets/bloodline-sigils.png)
+![Vampire Bloodlines](../assets/custom/bloodline-sigils.png)
 
 Bloodlines are selected separately from class. They are intended to be persistent identity choices with both advantages and meaningful drawbacks.
 
 ## Pureblood
 
-![Pureblood](assets/bloodline-pureblood.png)
+![Pureblood](../assets/custom/bloodline-pureblood.png)
 
 **Fantasy:** Ancient aristocratic vampire lineage focused on blood purity, control and efficiency.
 
@@ -55,7 +58,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Nosferatu
 
-![Nosferatu](assets/bloodline-nosferatu.png)
+![Nosferatu](../assets/custom/bloodline-nosferatu.png)
 
 **Fantasy:** Twisted nocturnal predator built around stalking, ambushes and opportunistic feeding.
 
@@ -81,7 +84,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Draculian
 
-![Draculian](assets/bloodline-draculian.png)
+![Draculian](../assets/custom/bloodline-draculian.png)
 
 **Fantasy:** A lineage touched by Dracula's corruption and forbidden arcane power.
 
@@ -107,7 +110,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Bloodborn
 
-![Bloodborn](assets/bloodline-bloodborn.png)
+![Bloodborn](../assets/custom/bloodline-bloodborn.png)
 
 **Fantasy:** Vampires whose bodies are unusually attuned to feeding, lifesteal and blood manipulation.
 
@@ -133,7 +136,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Dreadborn
 
-![Dreadborn](assets/bloodline-dreadborn.png)
+![Dreadborn](../assets/custom/bloodline-dreadborn.png)
 
 **Fantasy:** Massive, resilient vampires built to endure prolonged fights.
 
@@ -159,7 +162,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Nightstalker
 
-![Nightstalker](assets/bloodline-nightstalker.png)
+![Nightstalker](../assets/custom/bloodline-nightstalker.png)
 
 **Fantasy:** Hunters that peak under darkness and specialize in tracking wounded prey.
 
@@ -185,7 +188,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Voidtouched
 
-![Voidtouched](assets/bloodline-voidtouched.png)
+![Voidtouched](../assets/custom/bloodline-voidtouched.png)
 
 **Fantasy:** Vampires destabilized by void energies, trading consistency for powerful spell manipulation.
 
@@ -211,7 +214,7 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 ## Graveborn
 
-![Graveborn](assets/bloodline-graveborn.png)
+![Graveborn](../assets/custom/bloodline-graveborn.png)
 
 **Fantasy:** Death-attuned vampires with unusual affinity for undead, condemned enemies and summoned creatures.
 
@@ -237,13 +240,13 @@ Bloodlines are selected separately from class. They are intended to be persisten
 
 # Custom Classes
 
-![Custom Class Archetypes](assets/class-archetypes.png)
+![Custom Class Archetypes](../assets/custom/class-archetypes.png)
 
 A class must introduce a **gameplay loop**, not simply a collection of percentage bonuses. Each class below has a dedicated resource or state that should be visible to the player through chat/UI feedback where practical.
 
 ## Reaper
 
-![Reaper](assets/class-reaper.png)
+![Reaper](../assets/custom/class-reaper.png)
 
 **Role:** Execution / melee pressure<br>
 **Primary resource:** Souls
@@ -267,7 +270,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Blood Reaver
 
-![Blood Reaver](assets/class-blood-reaver.png)
+![Blood Reaver](../assets/custom/class-blood-reaver.png)
 
 **Role:** Berserker / sustained melee<br>
 **Primary resource:** Bloodrage
@@ -290,7 +293,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Frost Warden
 
-![Frost Warden](assets/class-frost-warden.png)
+![Frost Warden](../assets/custom/class-frost-warden.png)
 
 **Role:** Tank / control<br>
 **Primary resource:** Frost Armor
@@ -312,7 +315,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Plague Doctor
 
-![Plague Doctor](assets/class-plague-doctor.png)
+![Plague Doctor](../assets/custom/class-plague-doctor.png)
 
 **Role:** Damage-over-time / debuff support<br>
 **Primary resource:** Contagion
@@ -334,7 +337,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Beastmaster
 
-![Beastmaster](assets/class-beastmaster.png)
+![Beastmaster](../assets/custom/class-beastmaster.png)
 
 **Role:** Familiar / companion hybrid<br>
 **Primary resource:** Bond
@@ -360,7 +363,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Spellblade
 
-![Spellblade](assets/class-spellblade.png)
+![Spellblade](../assets/custom/class-spellblade.png)
 
 **Role:** Weapon/spell hybrid<br>
 **Primary resource:** Arc Charge
@@ -383,7 +386,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Soulbinder
 
-![Soulbinder](assets/class-soulbinder.png)
+![Soulbinder](../assets/custom/class-soulbinder.png)
 
 **Role:** Summoner / battlefield control<br>
 **Primary resource:** Essence
@@ -405,7 +408,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Blood Priest
 
-![Blood Priest](assets/class-blood-priest.png)
+![Blood Priest](../assets/custom/class-blood-priest.png)
 
 **Role:** Support / sustain<br>
 **Primary resource:** Sacrifice
@@ -427,7 +430,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Dread Knight
 
-![Dread Knight](assets/class-dread-knight.png)
+![Dread Knight](../assets/custom/class-dread-knight.png)
 
 **Role:** Bruiser / intimidation tank<br>
 **Primary resource:** Dread
@@ -449,7 +452,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 ## Riftwalker
 
-![Riftwalker](assets/class-riftwalker.png)
+![Riftwalker](../assets/custom/class-riftwalker.png)
 
 **Role:** Mobility / positional spell damage<br>
 **Primary resource:** Rift Charge
@@ -678,3 +681,7 @@ The Bloodlines & Classes expansion is considered production-ready when:
 - no class or bloodline requires a specific pairing to remain viable;
 - documentation matches actual commands/configuration;
 - compatibility failures degrade gracefully rather than crash the server.
+
+---
+
+[Wiki Home](../HOME.md) · [Commands](../reference/COMMANDS.md) · [Configuration](../reference/CONFIGURATION.md)
