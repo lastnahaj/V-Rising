@@ -13,3 +13,9 @@ Projects and server tools for V Rising.
 - [Troubleshooting](SanguineRelay/docs/TROUBLESHOOTING.md)
 
 Version 1.0.0 is a prerelease pending live hook validation on the target V Rising server build.
+
+## BloodcraftExpansion
+
+Design and implementation workspace for custom Bloodlines, Classes, specializations, progression systems, and related RPG content intended to complement Bloodcraft-based V Rising servers.
+
+- [Bloodlines & Classes design](BloodcraftExpansion/docs/BLOODLINES_AND_CLASSES.md)
