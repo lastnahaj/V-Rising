@@ -16,6 +16,7 @@
   --md-primary-fg-color: #22151b;
   --md-primary-bg-color: var(--bloodcraft-bone);
   --md-accent-fg-color: var(--bloodcraft-gold);
+  --md-typeset-a-color: #e3bb6b;
   --md-code-bg-color: #171217;
   --md-code-fg-color: #eadfce;
 }
@@ -64,6 +65,39 @@
 
 .md-typeset a {
   text-underline-offset: 0.16em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.headerlink) {
+  color: #e3bb6b;
+  text-decoration-color: rgba(227, 187, 107, 0.48);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.headerlink):visited {
+  color: #caa8e4;
+  text-decoration-color: rgba(202, 168, 228, 0.46);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:not(.headerlink):hover,
+[data-md-color-scheme="slate"] .md-typeset a:not(.headerlink):focus-visible {
+  color: #ffe0a0;
+  text-decoration-color: currentColor;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:not(.headerlink) {
+  color: #842738;
+  text-decoration-color: rgba(132, 39, 56, 0.4);
+}
+
+[data-md-color-scheme="default"] .md-typeset a:not(.headerlink):visited {
+  color: #633878;
+}
+
+.md-typeset a:focus-visible,
+.md-nav__link:focus-visible,
+.md-header a:focus-visible {
+  border-radius: 0.12rem;
+  outline: 2px solid var(--bloodcraft-gold);
+  outline-offset: 0.16rem;
 }
 
 .md-typeset table:not([class]) {
