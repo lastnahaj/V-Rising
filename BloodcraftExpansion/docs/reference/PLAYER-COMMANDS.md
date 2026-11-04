@@ -1,11 +1,11 @@
 # Player Commands
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-These 72 commands are declared with `adminOnly: false` in stable source. A system may still need to be enabled in server configuration.
+These 72 commands are declared with `adminOnly: false` in stable source. Names, aliases, arguments, and flags follow source; descriptions are normalized for clarity. A system may still need to be enabled in server configuration.
 
 ## Blood
 
@@ -56,10 +56,10 @@ These 72 commands are declared with `adminOnly: false` in stable source. A syste
 | `.familiar renamebox` | `.fam rb` | `[CurrentName] [NewName]` | Renames a box. | No |
 | `.familiar reset` | `.fam reset` | — | Resets (destroys) entities found in followerbuffer and clears familiar actives data. | No |
 | `.familiar search` | `.fam s` | `[Name]` | Searches boxes for familiar(s) with matching name. | No |
-| `.familiar shinybuff` | `.fam shiny` | `[SpellSchool]` | Spend vampiric dust to make your familiar shiny! | No |
+| `.familiar shinybuff` | `.fam shiny` | `[SpellSchool]` | Spend Vampiric Dust to apply or change the active familiar's shiny school. | No |
 | `.familiar slotbattlegroup` | `.fam sbg` | `[BattleGroupOrSlot] [Slot]` | Assigns active familiar to a battle group slot. If no battle group is specified, assigns to active group. | No |
 | `.familiar smartbind` | `.fam sb` | `[Name]` | Searches and binds a familiar. If multiple matches are found, returns a list for clarification. | No |
-| `.familiar toggle` | `.fam t` | — | Calls or dismisses familar. | No |
+| `.familiar toggle` | `.fam t` | — | Call or dismiss the active familiar. | No |
 | `.familiar togglecombat` | `.fam c` | — | Enables or disables combat for familiar. | No |
 | `.familiar toggleoption` | `.fam option` | `[Setting]` | Toggles various familiar settings. | No |
 | `.familiar unbind` | `.fam ub` | — | Destroys active familiar. | No |
@@ -80,7 +80,7 @@ These 72 commands are declared with `adminOnly: false` in stable source. A syste
 | `.miscellaneous sct` | `.misc sct` | `[Type]` | Toggles various scrolling text elements. | No |
 | `.miscellaneous silence` | `.misc silence` | — | Resets stuck combat music if needed. | No |
 | `.miscellaneous starterkit` | `.misc kitme` | — | Provides starting kit. | No |
-| `.miscellaneous userstats` | `.misc userstats` | — | Shows neat information about the player. | No |
+| `.miscellaneous userstats` | `.misc userstats` | — | Display a summary of the player's Bloodcraft statistics. | No |
 
 ## Prestige
 
@@ -109,7 +109,7 @@ These 72 commands are declared with `adminOnly: false` in stable source. A syste
 |---|---|---|---|:---:|
 | `.quest log` | — | — | Toggles quest progress logging. | No |
 | `.quest progress` | `.quest p` | `[QuestType]` | Display your current quest progress. | No |
-| `.quest reroll` | `.quest r` | `[QuestType]` | Reroll quest for cost (daily only currently). | No |
+| `.quest reroll` | `.quest r` | `[QuestType]` | Reroll an incomplete daily or weekly quest for its configured cost. | No |
 | `.quest track` | `.quest t` | `[QuestType]` | Locate and track quest target. | No |
 
 ## Weapon

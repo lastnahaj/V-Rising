@@ -1,11 +1,14 @@
 # Commands
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-This reference is generated from the 88 command attributes in the stable 1.13.22 source. Source definitions take precedence over older generated README text.
+This 88-command inventory is derived from the stable 1.13.26 command attributes. Names, aliases, arguments, and admin flags follow source; descriptions are normalized for clarity and recorded source discrepancies are called out explicitly.
+
+!!! info "Documented behavior correction"
+    The `.quest reroll` attribute still says “daily only currently,” but the 1.13.26 implementation handles both Daily and Weekly with separate configured costs. The table below reflects implemented behavior; see [Sources](../SOURCES.md#recorded-upstream-discrepancies).
 
 | Scope | Commands |
 |---|---:|
@@ -68,10 +71,10 @@ This reference is generated from the 88 command attributes in the stable 1.13.22
 | `.familiar search` | `.fam s` | `[Name]` | Searches boxes for familiar(s) with matching name. | No |
 | `.familiar setbattlearena` | `.fam sba` | — | Set current position as the center for the familiar battle arena. | Yes |
 | `.familiar setlevel` | `.fam sl` | `[Player] [Level]` | Set current familiar level. | Yes |
-| `.familiar shinybuff` | `.fam shiny` | `[SpellSchool]` | Spend vampiric dust to make your familiar shiny! | No |
+| `.familiar shinybuff` | `.fam shiny` | `[SpellSchool]` | Spend Vampiric Dust to apply or change the active familiar's shiny school. | No |
 | `.familiar slotbattlegroup` | `.fam sbg` | `[BattleGroupOrSlot] [Slot]` | Assigns active familiar to a battle group slot. If no battle group is specified, assigns to active group. | No |
 | `.familiar smartbind` | `.fam sb` | `[Name]` | Searches and binds a familiar. If multiple matches are found, returns a list for clarification. | No |
-| `.familiar toggle` | `.fam t` | — | Calls or dismisses familar. | No |
+| `.familiar toggle` | `.fam t` | — | Call or dismiss the active familiar. | No |
 | `.familiar togglecombat` | `.fam c` | — | Enables or disables combat for familiar. | No |
 | `.familiar toggleoption` | `.fam option` | `[Setting]` | Toggles various familiar settings. | No |
 | `.familiar unbind` | `.fam ub` | — | Destroys active familiar. | No |
@@ -95,7 +98,7 @@ This reference is generated from the 88 command attributes in the stable 1.13.22
 | `.miscellaneous sct` | `.misc sct` | `[Type]` | Toggles various scrolling text elements. | No |
 | `.miscellaneous silence` | `.misc silence` | — | Resets stuck combat music if needed. | No |
 | `.miscellaneous starterkit` | `.misc kitme` | — | Provides starting kit. | No |
-| `.miscellaneous userstats` | `.misc userstats` | — | Shows neat information about the player. | No |
+| `.miscellaneous userstats` | `.misc userstats` | — | Display a summary of the player's Bloodcraft statistics. | No |
 
 ## Prestige
 
@@ -131,7 +134,7 @@ This reference is generated from the 88 command attributes in the stable 1.13.22
 | `.quest log` | — | — | Toggles quest progress logging. | No |
 | `.quest progress` | `.quest p` | `[QuestType]` | Display your current quest progress. | No |
 | `.quest refresh` | `.quest rf` | `[Name]` | Refreshes daily and weekly quests for player. | Yes |
-| `.quest reroll` | `.quest r` | `[QuestType]` | Reroll quest for cost (daily only currently). | No |
+| `.quest reroll` | `.quest r` | `[QuestType]` | Reroll an incomplete daily or weekly quest for its configured cost. | No |
 | `.quest track` | `.quest t` | `[QuestType]` | Locate and track quest target. | No |
 
 ## Weapon
@@ -146,7 +149,7 @@ This reference is generated from the 88 command attributes in the stable 1.13.22
 | `.weapon log` | `.wep log` | — | Toggles expertise logging. | No |
 | `.weapon resetstats` | `.wep rst` | — | Reset the stats for current weapon. | No |
 | `.weapon set` | `.wep set` | `[Name] [Weapon] [Level]` | Sets player weapon expertise level. | Yes |
-| `.weapon setspells` | `.wep spell` | `[Name] [Slot] [PrefabGuid] [Radius]` | Manually sets spells for testing (if you enter a radius it will apply to players around the entered name). | Yes |
+| `.weapon setspells` | `.wep spell` | `[Name] [Slot] [PrefabGuid] [Radius]` | Set a spell for controlled testing; an optional radius applies it around the named player. | Yes |
 
 ---
 

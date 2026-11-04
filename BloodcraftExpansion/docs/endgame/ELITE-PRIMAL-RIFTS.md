@@ -1,8 +1,8 @@
 # Elite Primal Rifts
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 !!! experimental "Experimental Bloodcraft Feature"
@@ -14,8 +14,8 @@
 
 The feature is tied into Eclipse update scheduling when active. Test spawn cadence, restart behavior, cleanup, reward balance, and overlap with other event mods.
 
-!!! deprecated "Stable-version warning"
-    Bloodcraft 1.13.26 prerelease fixes duplicate scaling across restarts for persisted Nightmare and Primal Rift units. That fix is not part of the documented 1.13.22 stable package.
+!!! success "Restart-scaling fix included"
+    Bloodcraft 1.13.26 guards persisted Primal Rift and Nightmare units against duplicate stat scaling across server restarts. Test restart cleanup and event recovery anyway; the feature remains WIP.
 ---
 
 [Wiki Home](../HOME.md) · [Commands](../reference/COMMANDS.md) · [Configuration](../reference/CONFIGURATION.md)

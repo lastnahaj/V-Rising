@@ -7,6 +7,12 @@
   --bloodcraft-gold: #c5a15a;
   --bloodcraft-bone: #eee5d5;
   --bloodcraft-purple: #8f6ac8;
+  --bloodcraft-radius: 0.35rem;
+}
+
+::selection {
+  color: #fff8ea;
+  background: #792636;
 }
 
 [data-md-color-scheme="slate"] {
@@ -47,6 +53,10 @@
   margin-top: 1rem;
 }
 
+.md-typeset {
+  line-height: 1.68;
+}
+
 .md-main {
   background-image:
     radial-gradient(circle at 82% 8%, rgba(95, 36, 91, 0.12), transparent 28rem),
@@ -56,11 +66,17 @@
 .md-content__inner > h1 {
   color: var(--bloodcraft-gold);
   letter-spacing: 0.025em;
+  font-weight: 700;
 }
 
 .md-typeset h2 {
   border-bottom: 1px solid rgba(142, 36, 52, 0.45);
   padding-bottom: 0.22rem;
+  letter-spacing: 0.015em;
+}
+
+.md-typeset h3 {
+  color: color-mix(in srgb, var(--bloodcraft-gold) 78%, currentColor);
 }
 
 .md-typeset a {
@@ -92,6 +108,12 @@
   color: #633878;
 }
 
+[data-md-color-scheme="default"] .md-typeset a:not(.headerlink):hover,
+[data-md-color-scheme="default"] .md-typeset a:not(.headerlink):focus-visible {
+  color: #5f1423;
+  text-decoration-color: currentColor;
+}
+
 .md-typeset a:focus-visible,
 .md-nav__link:focus-visible,
 .md-header a:focus-visible {
@@ -102,12 +124,22 @@
 
 .md-typeset table:not([class]) {
   border: 1px solid rgba(197, 161, 90, 0.24);
+  border-radius: var(--bloodcraft-radius);
   box-shadow: 0 0.35rem 1.2rem rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
 
 .md-typeset table:not([class]) th {
   background: rgba(111, 28, 42, 0.32);
   color: var(--bloodcraft-bone);
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(197, 161, 90, 0.035);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(142, 36, 52, 0.08);
 }
 
 .md-typeset img {
@@ -116,7 +148,7 @@
   height: auto;
   margin-inline: auto;
   border: 1px solid rgba(197, 161, 90, 0.3);
-  border-radius: 0.25rem;
+  border-radius: var(--bloodcraft-radius);
 }
 
 .md-typeset .wiki-hero {
@@ -140,6 +172,27 @@
 
 .md-search__form {
   border: 1px solid rgba(197, 161, 90, 0.16);
+}
+
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: var(--bloodcraft-gold);
+}
+
+.md-typeset code {
+  border: 1px solid rgba(197, 161, 90, 0.14);
+  border-radius: 0.2rem;
+}
+
+.md-typeset pre > code {
+  border: 0;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--bloodcraft-gold);
+  background: rgba(197, 161, 90, 0.055);
+  padding-block: 0.2rem;
+  padding-right: 0.8rem;
 }
 
 .md-footer {
@@ -214,5 +267,16 @@
 
   .md-content__inner {
     padding-inline: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

@@ -43,6 +43,9 @@ jobs:
       - name: Validate Markdown links
         run: python BloodcraftExpansion/tools/check_markdown_links.py
 
+      - name: Validate wiki consistency
+        run: python BloodcraftExpansion/tools/check_wiki_consistency.py
+
       - name: Build wiki
         run: mkdocs build --strict
 

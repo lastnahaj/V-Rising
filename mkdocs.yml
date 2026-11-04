@@ -1,5 +1,5 @@
-site_name: Bloodcraft Wiki
-site_description: Community Bloodcraft documentation and BloodcraftExpansion content for V Rising
+site_name: Bloodcraft Community Wiki
+site_description: Unofficial, versioned Bloodcraft reference and BloodcraftExpansion design documentation for V Rising
 site_url: https://lastnahaj.github.io/V-Rising/
 
 repo_name: lastnahaj/V-Rising
@@ -31,6 +31,8 @@ theme:
         icon: material/weather-night
         name: Use dark theme
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     - navigation.indexes
     - navigation.path
@@ -41,6 +43,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    - content.tooltips
 
 markdown_extensions:
   - admonition
@@ -141,10 +144,10 @@ nav:
       - Currencies: items/CURRENCIES.md
   - Server Admin:
       - Overview: server-admin/README.md
-      - Recommended Configuration: server-admin/RECOMMENDED-CONFIG.md
-      - PvE Configuration: server-admin/PVE-CONFIG.md
-      - PvP Configuration: server-admin/PVP-CONFIG.md
-      - High Progression Configuration: server-admin/HIGH-PROGRESSION-CONFIG.md
+      - Recommended Rollout: server-admin/RECOMMENDED-CONFIG.md
+      - Cooperative PvE Profile: server-admin/PVE-CONFIG.md
+      - Conservative PvP Profile: server-admin/PVP-CONFIG.md
+      - Long-Progression Profile: server-admin/HIGH-PROGRESSION-CONFIG.md
       - Admin Commands: server-admin/ADMIN-COMMANDS.md
       - Player Data: server-admin/PLAYER-DATA.md
       - Troubleshooting: server-admin/TROUBLESHOOTING.md
@@ -171,6 +174,8 @@ nav:
       - Known Issues: compatibility/KNOWN-ISSUES.md
   - BloodcraftExpansion:
       - Overview: custom/README.md
+      - Architecture: custom/ARCHITECTURE.md
+      - Design Standards: custom/DESIGN-STANDARDS.md
       - Bloodlines & Classes: custom/BLOODLINES-AND-CLASSES.md
       - Bloodlines: custom/BLOODLINES.md
       - Custom Classes: custom/CUSTOM-CLASSES.md

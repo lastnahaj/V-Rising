@@ -5,6 +5,8 @@
 
 Specializations are planned branches within each custom class. They are intended to sharpen a playstyle without replacing Bloodcraft's upstream class, spell, expertise, legacy, or prestige data.
 
+“Wraithbinder” is the Reaper specialization previously called “Soulbinder.” The rename prevents collision with the standalone Soulbinder expansion class and reserves stable, unambiguous content IDs.
+
 The current design treats specialization choice as a future implementation phase. Before implementation it needs:
 
 - a durable player-data model;

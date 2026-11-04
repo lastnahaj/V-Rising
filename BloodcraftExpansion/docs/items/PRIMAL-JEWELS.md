@@ -1,8 +1,8 @@
 # Primal Jewels
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 When `ExtraRecipes` is enabled, the Gem Cutting Table can refine the item identified by `PrimalJewelCost` into a random enhanced tier 4 jewel with more modifiers and stronger rolls. The default input PrefabGUID represents a Demon Fragment in the upstream documentation.

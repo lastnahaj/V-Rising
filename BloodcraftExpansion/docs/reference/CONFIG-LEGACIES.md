@@ -1,8 +1,8 @@
 # Blood Legacies Configuration
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## Legacies
@@ -30,7 +30,7 @@
 | `AbilityAttackSpeed` | float | `0.1` | The base cap for ability attack speed. |
 | `CorruptionDamageReduction` | float | `0.1` | The base cap for corruption damage reduction. |
 
-Exact defaults are shown for stable 1.13.22. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
+Exact defaults are shown for stable 1.13.26. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
 
 ---
 

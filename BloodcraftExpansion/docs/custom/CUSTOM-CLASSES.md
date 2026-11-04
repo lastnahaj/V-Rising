@@ -3,7 +3,7 @@
 !!! expansion "BloodcraftExpansion Content"
     This page describes custom content designed for this project and is not part of upstream Bloodcraft unless explicitly stated otherwise.
 
-The expansion proposal contains ten classes:
+The expansion proposal contains ten **expansion classes**. These coexist conceptually with, and must not overwrite, the six upstream Bloodcraft classes.
 
 | Class | Proposed fantasy |
 |---|---|
@@ -23,6 +23,8 @@ These are not Bloodcraft's six upstream classes. See [Official Classes](../class
 ![Proposed custom class archetypes](../assets/custom/class-archetypes.png)
 
 Full mechanics and artwork are preserved in [Bloodlines & Classes](BLOODLINES-AND-CLASSES.md).
+
+The roster is currently at Concept status. See [Architecture Boundaries](ARCHITECTURE.md) for the dual-class model and [Design Standards](DESIGN-STANDARDS.md) for the information required before implementation.
 
 ---
 

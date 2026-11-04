@@ -1,8 +1,8 @@
 # Shift Slot
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 The Shift slot is Bloodcraft's class-spell slot. Players choose an available class spell with `.class choosespell [#]` after meeting its configured prestige requirement. `.class lockshift` toggles whether Bloodcraft manages that slot.

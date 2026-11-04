@@ -1,11 +1,11 @@
 # Configuration Reference
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-Bloodcraft generates `BepInEx/config/io.zfolmt.Bloodcraft.cfg`. Stop the server before editing and restart it after changes. The 153 entries below are sourced from stable 1.13.22; key capitalization and defaults are preserved.
+Bloodcraft generates `BepInEx/config/io.zfolmt.Bloodcraft.cfg`. Stop the server before editing and restart it after changes. The 153 entries below are sourced from stable 1.13.26; key capitalization and defaults are preserved.
 
 | Group | Keys | Reference |
 |---|---:|---|

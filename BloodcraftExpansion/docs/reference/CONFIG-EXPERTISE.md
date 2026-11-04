@@ -1,8 +1,8 @@
 # Weapon Expertise Configuration
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## Expertise
@@ -11,9 +11,9 @@
 |---|---|---|---|
 | `ExpertiseSystem` | bool | `False` | Enable or disable the expertise system. |
 | `MaxExpertisePrestiges` | int | `10` | The maximum number of prestiges a player can reach in expertise. |
-| `UnarmedSlots` | bool (PrefabGUID list) | `False` | Enable or disable extra spells while unarmed. |
-| `FishingSlots` | bool (PrefabGUID list) | `False` | Enable or disable extra spells while fishing. |
-| `Duality` | bool | `True` | True for both unarmed slots, false for one unarmed slot. Does nothing without UnarmedSlots enabled (doesn't apply to fishing pole). |
+| `UnarmedSlots` | bool | `False` | Enable or disable extra spells while unarmed. |
+| `FishingSlots` | bool | `False` | Enable or disable extra spells while fishing. |
+| `Duality` | bool | `True` | Use both unarmed slots when true or one unarmed slot when false. Has no effect unless `UnarmedSlots` is enabled and does not apply to the fishing pole. |
 | `ShiftSlot` | bool | `False` | Enable or disable using class spell on shift. |
 | `MaxExpertiseLevel` | int | `100` | The maximum level a player can reach in weapon expertise. |
 | `UnitExpertiseMultiplier` | float | `2` | The multiplier for expertise gained from units. |
@@ -35,7 +35,7 @@
 | `SpellCritChance` | float | `0.1` | The base cap for spell critical strike chance. |
 | `SpellCritDamage` | float | `0.5` | The base cap for spell critical strike damage. |
 
-Exact defaults are shown for stable 1.13.22. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
+Exact defaults are shown for stable 1.13.26. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
 
 ---
 

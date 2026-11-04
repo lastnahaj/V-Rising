@@ -9,6 +9,9 @@
 >
 > **Goal:** Add persistent character identity and new combat archetypes on top of Bloodcraft without replacing Bloodcraft's progression systems.
 
+!!! info "Design maturity: Concept"
+    The roster defines fantasy, loops, and directional mechanics. It is not an implementation specification until each entry supplies exact triggers, proposed values, lifecycle rules, configuration, interaction coverage, and tests required by the [Design Standards](DESIGN-STANDARDS.md).
+
 ## Overview
 
 The expansion separates character identity into four layers:
@@ -22,6 +25,8 @@ The expansion separates character identity into four layers:
 
 The design deliberately avoids hard race/class locks. A bloodline may synergize with a class, but players should be able to build unusual combinations without being punished into a single meta choice.
 
+An expansion class is separate from the player's upstream Bloodcraft class. It must not overwrite Bloodcraft class selection, Shift-slot state, or persistence. The full ownership and compatibility model is defined in [Architecture Boundaries](ARCHITECTURE.md).
+
 ---
 
 # Bloodlines
@@ -29,6 +34,8 @@ The design deliberately avoids hard race/class locks. A bloodline may synergize 
 ![Vampire Bloodlines](../assets/custom/bloodline-sigils.png)
 
 Bloodlines are selected separately from class. They are intended to be persistent identity choices with both advantages and meaningful drawbacks.
+
+“Racial ability” describes a designed action, not an assumed keybind or ability slot. An active action can ship only after its input channel passes the architecture gate; otherwise the first implementation must express that identity through passive or event-driven behavior.
 
 ## Pureblood
 
@@ -263,7 +270,7 @@ A class must introduce a **gameplay loop**, not simply a collection of percentag
 
 **Specializations**
 - **Harvester:** execute low-health enemies and chain Soul refunds.
-- **Soulbinder:** spend Souls on spectral assistance and control.
+- **Wraithbinder:** spend Souls on spectral assistance and control.
 - **Doomsayer:** turns Soul spending into curses and area pressure.
 
 ---
@@ -489,6 +496,8 @@ Examples:
 
 A synergy may grant a small thematic modifier, altered resource behavior or unique cosmetic title. It should **not** be so powerful that every Reaper must choose the same bloodline.
 
+Every shipped roster requires an explicit interaction matrix. “Soft” is a design intent, not a measurable balance rule; proposed values, caps, and playtest evidence must demonstrate that neutral pairings remain viable.
+
 ---
 
 # Progression
@@ -587,6 +596,8 @@ Conceptual class definition:
 
 These are **design examples**, not a commitment to a specific serialization library or runtime schema.
 
+Stable IDs must be machine-safe, immutable after release, and distinct across content kinds. Display names may be localized or revised without changing persisted identity.
+
 ---
 
 # Server Administration Requirements
@@ -619,6 +630,14 @@ A production implementation should provide:
 
 # Implementation Phases
 
+## Phase 0 — Architecture evidence
+- Confirm supported dependency versions.
+- Inventory and test required game events and hooks.
+- Select the persistence identity, action channel and presentation fallback.
+- Record migration, rollback and dependency-mismatch behavior.
+
+**Exit condition:** all required decisions in [Architecture Boundaries](ARCHITECTURE.md) have written evidence.
+
 ## Phase 1 — Framework
 - Persistence model.
 - Bloodline selection.
@@ -628,22 +647,29 @@ A production implementation should provide:
 - Resource-state abstraction.
 - Bloodcraft integration boundary.
 
-## Phase 2 — First playable content
-Recommended initial vertical slice:
-- Bloodlines: Pureblood, Nosferatu, Dreadborn, Graveborn.
-- Classes: Reaper, Frost Warden, Spellblade, Beastmaster.
-- One specialization per initial class.
+## Phase 2 — Technical vertical slice
+- One bloodline: **Dreadborn**.
+- One expansion class: **Blood Reaver**.
+- One specialization: **Red Juggernaut**.
 - Respec flow.
 - Debug/admin tooling.
+- Death, reconnect, restart, disable, rename and rollback tests.
 
-## Phase 3 — Full roster
+This slice intentionally favors observable combat and state events before attempting stealth, teleport repetition, familiar command layers, or client UI. Its purpose is architecture validation, not roster balance.
+
+## Phase 3 — Balance pilot
+- Add Voidtouched and Spellblade with one specialization each.
+- Test all four bloodline/class pairings.
+- Establish PvE/PvP budgets, resource caps, boss normalization and telemetry.
+
+## Phase 4 — Full roster
 - All eight bloodlines.
 - All ten classes.
 - Three specializations per class.
 - Soft bloodline/class synergies.
 - Expanded racial progression.
 
-## Phase 4 — Content integration
+## Phase 5 — Content integration
 - World bosses and events rewarding bloodline/class progression.
 - Relics that modify class resources.
 - Race-specific bounties/challenges.
@@ -663,6 +689,8 @@ The implementation should validate these against the current V Rising/Bloodcraft
 - How should active resource state survive reconnects, deaths and server restarts?
 - What is the cleanest migration strategy if content IDs are renamed?
 
+These must become written architecture decisions before the affected feature leaves Concept status. The design does not authorize guessing an API, hook, ability slot, PrefabGUID, transport, or persistence contract.
+
 These questions are intentionally left open for implementation research rather than guessed in the design documentation.
 
 ---
@@ -681,6 +709,10 @@ The Bloodlines & Classes expansion is considered production-ready when:
 - no class or bloodline requires a specific pairing to remain viable;
 - documentation matches actual commands/configuration;
 - compatibility failures degrade gracefully rather than crash the server.
+- a supported dependency matrix and rollback path are published;
+- death, reconnect, restart, disable, rename and uninstall behavior are tested;
+- balance claims are supported by recorded configurations and playtest evidence;
+- player-facing state remains understandable without relying on color or a mandatory client UI.
 
 ---
 

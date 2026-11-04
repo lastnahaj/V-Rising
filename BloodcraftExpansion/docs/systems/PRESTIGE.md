@@ -1,8 +1,8 @@
 # Prestige System
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 Prestige resets a completed progression track and records a permanent prestige level. Bloodcraft supports leveling prestige, per-weapon expertise prestige, per-blood legacy prestige, and optional Exo prestige. Familiar prestige is a separate familiar feature.

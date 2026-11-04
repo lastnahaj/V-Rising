@@ -4,11 +4,11 @@
     These commands modify server or player state. Back up Bloodcraft player data before bulk changes.
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-These 16 commands are declared with `adminOnly: true` in stable source.
+These 16 commands are declared with `adminOnly: true` in stable source. Names, aliases, arguments, and flags follow source; descriptions are normalized for clarity.
 
 ## Blood
 
@@ -64,7 +64,7 @@ These 16 commands are declared with `adminOnly: true` in stable source.
 | Command | Shortcut | Arguments | Description | Admin |
 |---|---|---|---|:---:|
 | `.weapon set` | `.wep set` | `[Name] [Weapon] [Level]` | Sets player weapon expertise level. | Yes |
-| `.weapon setspells` | `.wep spell` | `[Name] [Slot] [PrefabGuid] [Radius]` | Manually sets spells for testing (if you enter a radius it will apply to players around the entered name). | Yes |
+| `.weapon setspells` | `.wep spell` | `[Name] [Slot] [PrefabGuid] [Radius]` | Set a spell for controlled testing; an optional radius applies it around the named player. | Yes |
 
 ---
 

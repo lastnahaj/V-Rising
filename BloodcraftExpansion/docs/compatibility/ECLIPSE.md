@@ -1,8 +1,8 @@
 # Eclipse Compatibility
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable · **Eclipse version:** 1.3.14 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable · **Eclipse version:** 1.3.14 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft and Eclipse, not BloodcraftExpansion custom features.
 
 Eclipse is Bloodcraft's companion client UI. Bloodcraft runs on the server without requiring players to install Eclipse; clients add the visual interface.

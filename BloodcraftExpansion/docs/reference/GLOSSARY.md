@@ -1,8 +1,8 @@
 # Glossary
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 | Term | Meaning |
@@ -19,8 +19,8 @@
 | Primal Echo | An endgame familiar unlock mechanism tied to Exo progression |
 | Shiny | A familiar variant/effect managed with familiar commands and Vampiric Dust |
 | Shift slot | The ability slot Bloodcraft uses for class spells |
-| Stable | Behavior included in the documented Thunderstore stable release |
-| Prerelease | Newer upstream build documented separately and not silently merged into stable behavior |
+| Stable | Behavior included in the documented current Thunderstore package |
+| Prerelease tag | GitHub release-artifact label used upstream; it does not by itself determine whether the matching package is current on Thunderstore |
 | V Blood | V Rising boss-class enemy category |
 
 ---

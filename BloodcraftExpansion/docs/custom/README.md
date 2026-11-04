@@ -7,12 +7,18 @@ BloodcraftExpansion is a proposed server-content layer built around Bloodcraft's
 
 ## Design library
 
+- [Architecture Boundaries](ARCHITECTURE.md) — ownership, integration, persistence, lifecycle, and compatibility decisions
+- [Design Standards](DESIGN-STANDARDS.md) — readiness template, tuning language, balance rules, and test evidence
 - [Bloodlines & Classes](BLOODLINES-AND-CLASSES.md) — complete source design
 - [Vampire Bloodlines](BLOODLINES.md)
 - [Custom Classes](CUSTOM-CLASSES.md)
 - [Specializations](SPECIALIZATIONS.md)
 - [Bloodline × Class Synergies](SYNERGIES.md)
 - [Roadmap](ROADMAP.md)
+
+## Current maturity
+
+The roster is at **Concept** status. Architecture, input handling, numeric tuning, persistence, and compatibility must satisfy the [design standards](DESIGN-STANDARDS.md) before any entry is described as implementation-ready.
 
 ## Future categories
 

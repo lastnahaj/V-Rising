@@ -1,15 +1,15 @@
 # General and Starter Kit Configuration
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## General
 
 | Setting | Type | Default | Description |
 |---|---|---|---|
-| `LanguageLocalization` | string (PrefabGUID list) | `"English"` | The language localization for prefabs displayed to users. English by default. Options: Brazilian, English, French, German, Hungarian, Italian, Japanese, Koreana, Latam, Polish, Russian, SimplifiedChinese, Spanish, TraditionalChinese, Thai, Turkish, Vietnamese |
+| `LanguageLocalization` | string (enum name) | `"English"` | The language localization for prefabs displayed to users. English by default. Options: Brazilian, English, French, German, Hungarian, Italian, Japanese, Koreana, Latam, Polish, Russian, SimplifiedChinese, Spanish, TraditionalChinese, Thai, Turkish, Vietnamese |
 | `Eclipsed` | bool | `False` | Eclipse will be active if any features that sync with the client are enabled. Instead, this now controls the frequency; true for faster (0.1s), false for slower (2.5s). |
 | `UseEmberglassEclipseBridge` | bool | `False` | Use Emberglass for the Bloodcraft/Eclipse bridge when Emberglass is installed. Falls back to the legacy chat bridge when disabled or unavailable. |
 | `ElitePrimalRifts` | bool | `False` | Enable or disable elite primal rifts. |
@@ -28,11 +28,11 @@
 | Setting | Type | Default | Description |
 |---|---|---|---|
 | `StarterKit` | bool | `False` | Enable or disable the starter kit. |
-| `KitPrefabs` | string (PrefabGUID list) | `"862477668,-1531666018,-1593377811,1821405450"` | Item prefabGuids for starting kit. |
+| `KitPrefabs` | string (PrefabGUID list) | `"862477668,-1531666018,-1593377811,1821405450"` | Item PrefabGUIDs included in the starter kit. |
 | `KitQuantities` | string | `"500,1000,1000,250"` | The quantity of each item in the starter kit. |
 | `KitFamiliar` | int (PrefabGUID) | `0` | Character Prefab GUID for a familiar to grant with the starter kit (0 disables). |
 
-Exact defaults are shown for stable 1.13.22. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
+Exact defaults are shown for stable 1.13.26. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
 
 ---
 

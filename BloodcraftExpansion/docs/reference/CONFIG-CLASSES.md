@@ -1,8 +1,8 @@
 # Classes Configuration
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## Classes
@@ -12,7 +12,7 @@
 | `ClassSystem` | bool | `False` | Enable classes without synergy restrictions. |
 | `ChangeClassItem` | int (PrefabGUID) | `576389135` | Item PrefabGUID cost for changing class. |
 | `ChangeClassQuantity` | int | `750` | Quantity of item required for changing class. |
-| `ClassOnHitEffects` | bool | `True` | Enable or disable class spell school on hit effects (chance to proc respective debuff from spell school when dealing damage (leech, chill, condemn etc), second tier effect will proc if first is already present on target. |
+| `ClassOnHitEffects` | bool | `True` | Enable class spell-school on-hit effects. A qualifying hit can apply the school debuff; if that debuff is already present, the corresponding second-tier effect can trigger. |
 | `OnHitProcChance` | float | `0.075` | The chance for a class effect to proc on hit. |
 | `SynergyMultiplier` | float | `1.5` | Multiplier for class stat synergies to base stat cap. |
 | `BloodKnightWeaponSynergies` | string | `"MaxHealth,PrimaryAttackSpeed,PrimaryLifeLeech,PhysicalPower"` | Blood Knight weapon synergies. |
@@ -35,7 +35,7 @@
 | `ArcaneSorcererSpells` | string (PrefabGUID list) | `"247896794,268059675,-242769430,-2053450457,1650878435"` | Arcane Sorcerer shift spells, granted at levels of prestige. |
 | `DeathMageSpells` | string (PrefabGUID list) | `"-1204819086,481411985,1961570821,2138402840,-1781779733"` | Death Mage shift spells, granted at levels of prestige. |
 
-Exact defaults are shown for stable 1.13.22. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
+Exact defaults are shown for stable 1.13.26. Only constraints explicitly stated in the descriptions should be treated as supported ranges.
 
 ---
 

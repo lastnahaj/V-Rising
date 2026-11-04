@@ -1,11 +1,11 @@
 # Classes System
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-Bloodcraft 1.13.22 provides six upstream classes: Blood Knight, Demon Hunter, Vampire Lord, Shadow Blade, Arcane Sorcerer, and Death Mage.
+Bloodcraft 1.13.26 provides six upstream classes: Blood Knight, Demon Hunter, Vampire Lord, Shadow Blade, Arcane Sorcerer, and Death Mage.
 
 A class can provide three mechanical layers:
 

@@ -1,20 +1,51 @@
-# PvE Configuration Example
+# Cooperative PvE Profile
 
-!!! admin "Community configuration example — not an upstream Bloodcraft default"
-    These are policy recommendations, not Bloodcraft defaults. Copy exact keys and valid values from the [configuration reference](../reference/CONFIGURATION.md).
+!!! admin "Community example — not an upstream default"
+    This overlay assumes the [recommended rollout profile](RECOMMENDED-CONFIG.md) has already been reviewed. Merge it into a generated 1.13.26 configuration while the server is stopped.
 
-For a persistent cooperative PvE server:
+This profile favors shared progression and conservative familiar use. It does not enable experimental endgame or weapon systems.
 
-- Enable Leveling, Expertise, Legacies, Classes, Quests, Professions, and Familiars in stages.
-- Keep experience sharing enabled; choose a distance and level range that fit ordinary group play.
-- Retain moderate default rate multipliers during the first season.
-- Enable Prestige only after players understand that it resets the associated progression.
-- Consider Extra Recipes when shiny familiars and Primal Jewels are part of the economy.
-- Leave familiar battles and experimental weapons disabled until a staging test passes.
-- Introduce Nightmare Mode or elite endgame options only after baseline progression is stable.
+```ini
+[Leveling]
+ExpShare = true
+ExpShareLevelRange = 10
+ExpShareDistance = 25
+GroupLevelingMultiplier = 1
+UnitSpawnerMultiplier = 0
 
-Review storage growth and back up player JSON data regularly.
+[Classes]
+ClassOnHitEffects = true
+OnHitProcChance = 0.075
+SynergyMultiplier = 1.5
+
+[Familiars]
+ShareUnlocks = true
+FamiliarCombat = true
+FamiliarPvP = false
+AllowVBloods = false
+AllowMinions = false
+FamiliarBattles = false
+
+[Professions]
+ProfessionFactor = 1
+ExtraRecipes = false
+
+[Prestige]
+PrestigeSystem = false
+ExoPrestiging = false
+```
+
+## Deliberate choices
+
+- Spawner XP remains disabled to avoid trivial automated progression.
+- Familiar unlock sharing supports cooperative groups; V Bloods and minions remain excluded.
+- Extra Recipes should be enabled only after the economy has a documented role for Vampiric Dust, Primal Jewels, and added conversions.
+- Prestige should be introduced through an announced maintenance change after backup/restore testing.
+
+## Validate before launch
+
+Test party and clan sharing, familiar unlock attribution, boss kill credit, class on-hit effects, profession output, server restart, and inventory-full reward behavior with the expected group size.
 
 ---
 
-[Wiki Home](../HOME.md) · [Commands](../reference/COMMANDS.md) · [Configuration](../reference/CONFIGURATION.md)
+[Server Administration](README.md) · [Recommended Rollout](RECOMMENDED-CONFIG.md) · [Configuration](../reference/CONFIGURATION.md)

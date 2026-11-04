@@ -1,19 +1,53 @@
-# High-Progression Configuration Example
+# Long-Progression Profile
 
-!!! admin "Community configuration example — not an upstream Bloodcraft default"
-    This profile favors a long progression arc and requires careful backup and economy planning.
+!!! admin "Community example — not an upstream default"
+    This overlay slows several progression tracks. Apply it before a season begins or with an announced migration plan; changing rates mid-season affects player equity.
 
-- Enable the complete stable progression stack and retain distinct expertise and legacy identities.
-- Use higher caps or slower multipliers to create long-term goals; change one axis at a time.
-- Make Prestige rewards and their reset cost explicit before players commit.
-- Use Quests and Professions as parallel loops rather than the sole XP source.
-- Gate Exo Prestige, Exo forms, and Primal Echoes behind tested prerequisites.
-- Add elite endgame systems gradually and label experimental systems in server rules.
-- Monitor familiar persistence limitations and warn players about inventory contents before restarts.
-- Back up the entire Bloodcraft data directory before updates and scheduled maintenance.
+```ini
+[Leveling]
+UnitLevelingMultiplier = 5
+VBloodLevelingMultiplier = 10
+GroupLevelingMultiplier = 1
+UnitSpawnerMultiplier = 0
+LevelScalingMultiplier = 0.05
 
-Long-running servers should keep a versioned copy of their configuration outside the live server directory.
+[Expertise]
+UnitExpertiseMultiplier = 1.5
+VBloodExpertiseMultiplier = 4
+UnitSpawnerExpertiseFactor = 0
+MaxExpertisePrestiges = 10
+
+[Legacies]
+UnitLegacyMultiplier = 0.75
+VBloodLegacyMultiplier = 4
+MaxLegacyPrestiges = 10
+
+[Professions]
+ProfessionFactor = 0.75
+
+[Prestige]
+PrestigeSystem = true
+MaxLevelingPrestiges = 10
+LevelingPrestigeReducer = 0.05
+PrestigeRatesReducer = 0.1
+PrestigeStatMultiplier = 0.1
+PrestigeRateMultiplier = 0.1
+ExoPrestiging = false
+Leaderboard = true
+```
+
+## Operational requirements
+
+- Publish reset effects, caps, leaderboards, and rate changes before players invest.
+- Measure median time per level, expertise, legacy, profession, and prestige track during a pilot.
+- Keep Exo Prestige disabled until ordinary prestige completion and recovery have been observed.
+- Review expertise/legacy stat growth together with class synergy; long progression must not become an uncapped combat-power gap.
+- Store versioned configuration and data backups outside the live server directory.
+
+## Promotion gate
+
+Do not promote this profile from pilot to production until the expected season can reach its intended milestones, catch-up policy is defined, and restore testing confirms that all progression tracks remain consistent as one backup set.
 
 ---
 
-[Wiki Home](../HOME.md) · [Commands](../reference/COMMANDS.md) · [Configuration](../reference/CONFIGURATION.md)
+[Server Administration](README.md) · [Prestige](../systems/PRESTIGE.md) · [Configuration](../reference/CONFIGURATION.md)

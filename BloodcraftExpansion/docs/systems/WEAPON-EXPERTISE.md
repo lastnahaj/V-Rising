@@ -1,13 +1,13 @@
 # Weapon Expertise
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## What it is
 
-Weapon Expertise tracks progression separately for each supported weapon. The equipped weapon that delivers the final blow receives expertise. Bloodcraft 1.13.22 defines 16 types: Sword, Axe, Mace, Spear, Crossbow, GreatSword, Slashers, Pistols, Reaper, Longbow, Whip, Unarmed, FishingPole, TwinBlades, Daggers, and Claws.
+Weapon Expertise tracks progression separately for each supported weapon. The equipped weapon that delivers the final blow receives expertise. Bloodcraft 1.13.26 defines 16 types: Sword, Axe, Mace, Spear, Crossbow, GreatSword, Slashers, Pistols, Reaper, Longbow, Whip, Unarmed, FishingPole, TwinBlades, Daggers, and Claws.
 
 Players choose up to `ExpertiseStatChoices` bonus stats per weapon (default `3`). Bonus strength scales with that weapon’s expertise level, the configured base cap, class synergy, and expertise prestige.
 

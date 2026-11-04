@@ -14,10 +14,11 @@ Projects and server tools for V Rising.
 
 Version 1.0.0 is a prerelease pending live hook validation on the target V Rising server build.
 
-## Bloodcraft Wiki & Expansion
+## Bloodcraft Community Wiki & Expansion
 
-Community documentation for Bloodcraft plus custom RPG expansion content for Bloodcraft-based V Rising servers.
+Unofficial, versioned documentation for Bloodcraft 1.13.26 plus custom RPG expansion design for Bloodcraft-based V Rising servers.
 
-- [Bloodcraft Wiki](BloodcraftExpansion/docs/HOME.md)
+- [Bloodcraft Community Wiki](BloodcraftExpansion/docs/HOME.md)
 - [Published wiki](https://lastnahaj.github.io/V-Rising/)
 - [Bloodlines & Classes](BloodcraftExpansion/docs/custom/BLOODLINES-AND-CLASSES.md)
+- [Expansion architecture](BloodcraftExpansion/docs/custom/ARCHITECTURE.md)

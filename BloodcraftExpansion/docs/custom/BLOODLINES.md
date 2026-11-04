@@ -9,9 +9,9 @@ The proposal defines eight persistent vampire identities layered above Bloodcraf
 |---|---|
 | Pureblood | Aristocratic control, blood efficiency, and refined power |
 | Nosferatu | Stealth, ambush, and predatory survival |
-| Draculian | Martial authority and ancient vampire dominance |
-| Bloodborn | Aggressive blood combat and sustain |
-| Dreadborn | Fear, pressure, and battlefield disruption |
+| Draculian | Corrupted spell power, blood-cost casting, and forbidden arcana |
+| Bloodborn | Feeding, life leech, stored blood, and sustain |
+| Dreadborn | Health, resistance, crowd-control resilience, and deliberate frontline play |
 | Nightstalker | Mobility, hunting, and darkness |
 | Voidtouched | Arcane distortion and high-risk power |
 | Graveborn | Death magic, attrition, and undead affinity |

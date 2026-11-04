@@ -1,8 +1,8 @@
 # Extra Recipes
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 The optional `ExtraRecipes` setting adds salvage conversions and refinement recipes. It also provides the normal crafting path for [Vampiric Dust](VAMPIRIC-DUST.md), which familiars use for shiny effects.
@@ -29,7 +29,7 @@ The optional `ExtraRecipes` setting adds salvage conversions and refinement reci
 | Copper Wires | 3 Copper Ingots | Fabricator | Wire production |
 | Vampiric Dust | 8 Bleeding Hearts; 40 Blood Crystals | Advanced Grinder | Apply or change familiar shiny effects |
 
-The Primal Jewel input is controlled by the `PrimalJewelCost` PrefabGUID. The other listed quantities are the stable 1.13.22 definitions.
+The Primal Jewel input is controlled by the `PrimalJewelCost` PrefabGUID. The other listed quantities are the stable 1.13.26 definitions.
 
 ---
 

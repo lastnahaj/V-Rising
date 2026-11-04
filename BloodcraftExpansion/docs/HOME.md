@@ -1,4 +1,4 @@
-# Bloodcraft Wiki
+# Bloodcraft Community Wiki
 
 **Master the Blood. Shape the Vampire. Rule Vardoran.**
 
@@ -6,13 +6,20 @@
 
 *The Gothic artwork on this site was created for BloodcraftExpansion documentation; it is not upstream Bloodcraft artwork.*
 
-This community wiki has two clearly separated areas:
+This independent, unofficial community wiki has two clearly separated areas:
 
 - **Bloodcraft reference** — versioned guides for the upstream server mod maintained at [mfoltz/Bloodcraft](https://github.com/mfoltz/Bloodcraft).
 - **BloodcraftExpansion** — custom and planned Bloodlines, Classes, specializations, and future RPG content for this repository.
 
 !!! version "Reference snapshot"
-    Official-reference pages target **Bloodcraft 1.13.22 stable** from Thunderstore, source commit `cc34b357e6c3c88e5feadb9b0f7e11ab8d0c904f`, verified 2026-08-23. Newer GitHub prereleases are identified separately.
+    Official-reference pages target **Bloodcraft 1.13.26** from Thunderstore, source commit `d44ede036fc5f150b1aec8e65471b035bd2c9668`, verified 2026-11-02. See the [evidence and maintenance policy](SOURCES.md).
+
+| Area | Current status |
+|---|---|
+| Bloodcraft reference | 1.13.26 current Thunderstore package |
+| Eclipse companion | 1.3.14 current Thunderstore package |
+| BloodcraftExpansion | Concept/design documentation; no gameplay implementation |
+| Independence | Unofficial community project; no endorsement or affiliation claimed |
 
 ## Choose a path
 
@@ -78,6 +85,8 @@ This community wiki has two clearly separated areas:
 ## BloodcraftExpansion
 
 The custom section proposes [Vampire Bloodlines](custom/BLOODLINES.md), [Custom Classes](custom/CUSTOM-CLASSES.md), [Specializations](custom/SPECIALIZATIONS.md), and [Bloodline × Class synergies](custom/SYNERGIES.md). These are not upstream Bloodcraft features and are not implemented unless a page explicitly says otherwise.
+
+Start with the [architecture boundaries](custom/ARCHITECTURE.md) and [design standards](custom/DESIGN-STANDARDS.md) before treating a concept as implementation-ready.
 
 ## Quick reference
 

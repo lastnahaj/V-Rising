@@ -1,8 +1,8 @@
 # Familiars System
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 Familiars turn eligible defeated enemies into persistent unlocks that players can bind as companions. The system covers unlock chance, boxes, search, summoning, combat, leveling, optional prestige, shiny spell-school effects, equipment, emote actions, V Blood eligibility, Primal Echoes, and an experimental battle queue.

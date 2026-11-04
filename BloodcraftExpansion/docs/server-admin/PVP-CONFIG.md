@@ -1,20 +1,59 @@
-# PvP Configuration Example
+# Conservative PvP Profile
 
-!!! admin "Community configuration example — not an upstream Bloodcraft default"
-    PvP balance is server-specific. Test every stat cap and progression multiplier before launch.
+!!! admin "Community example — not an upstream default"
+    PvP balance is server-specific. This overlay reduces proc/synergy pressure and disables familiar PvP and Bloodcraft-managed Shift spells until controlled duel and group tests pass.
 
-A conservative PvP profile should:
+```ini
+[Leveling]
+ExpShare = true
+ExpShareLevelRange = 10
+ExpShareDistance = 25
 
-- Keep expertise and legacy stat caps modest and progression understandable.
-- Avoid large gaps created by very high rate multipliers or long uncapped prestige ladders.
-- Review shared-XP rules; Bloodcraft restricts sharing more tightly on PvP servers.
-- Validate classes, Shift spells, familiar combat, shiny effects, and Exo forms in duels and group fights.
-- Leave experimental weapon modifications and Primal Arsenal off unless the server explicitly adopts them.
-- Publish reset costs and seasonal reset policy.
-- Use KindredArenas only as a separately maintained upstream recommendation; it is not a Bloodcraft requirement.
+[Expertise]
+ExpertiseStatChoices = 3
+ShiftSlot = false
 
-There is no universal competitive preset in Bloodcraft. Record the exact live config and test changes on a clone.
+[Legacies]
+LegacyStatChoices = 3
+
+[Classes]
+ClassOnHitEffects = true
+OnHitProcChance = 0.05
+SynergyMultiplier = 1.25
+
+[Familiars]
+FamiliarPvP = false
+AllowVBloods = false
+AllowMinions = false
+FamiliarBattles = false
+
+[General]
+PotionStacking = false
+BleedingEdge =
+PrimalArsenal = false
+NightmareMode = false
+EliteShardBearers = false
+ElitePrimalRifts = false
+
+[Prestige]
+PrestigeSystem = false
+ExoPrestiging = false
+```
+
+## Required balance pass
+
+Before enabling Shift spells, familiar PvP, prestige stat scaling, Exo forms, potion stacking, or experimental weapons, test:
+
+- equal-progression duels across all six upstream classes;
+- outnumbered and group combat;
+- physical/spell burst, sustain, movement, cooldown recovery, and control duration;
+- gear and progression-gap outcomes;
+- siege-window reconnects and class changes;
+- familiar dismissal on PvP entry;
+- seasonal reset and respec-cost communication.
+
+Record the exact live configuration with every balance result. A configuration change without its tested context is not a reusable preset.
 
 ---
 
-[Wiki Home](../HOME.md) · [Commands](../reference/COMMANDS.md) · [Configuration](../reference/CONFIGURATION.md)
+[Server Administration](README.md) · [Recommended Rollout](RECOMMENDED-CONFIG.md) · [Configuration](../reference/CONFIGURATION.md)

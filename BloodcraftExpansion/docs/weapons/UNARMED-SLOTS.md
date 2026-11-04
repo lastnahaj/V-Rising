@@ -1,13 +1,13 @@
 # Unarmed and Fishing Slots
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
-Bloodcraft includes Unarmed and FishingPole in its expertise type list. Stable 1.13.22 also exposes `UnarmedSlots` and `FishingSlots`, which are comma-separated ability PrefabGUID lists used for those loadouts.
+Bloodcraft includes Unarmed and FishingPole in its expertise type list. `UnarmedSlots` and `FishingSlots` are boolean switches that enable the extra-spell capture behavior for those loadouts. They are not PrefabGUID lists.
 
-These values are raw PrefabGUIDs. Change them only with IDs verified for the server's game build; Bloodcraft does not turn arbitrary numbers into safe abilities.
+Players use `.wep locksp` to lock the next equipped spells into the enabled unarmed loadout. `Duality=true` allows both unarmed slots; `false` limits unarmed capture to one slot and does not affect fishing. Administrators can use `.wep spell [Name] [Slot] [PrefabGuid] [Radius]` for controlled testing, but any supplied PrefabGUID must be verified for the active game build.
 
 ---
 

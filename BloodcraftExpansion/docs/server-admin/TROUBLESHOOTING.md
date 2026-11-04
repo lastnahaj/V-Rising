@@ -1,16 +1,16 @@
 # Troubleshooting
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 ## Bloodcraft does not load
 
 - Confirm this is a V Rising dedicated server process; Bloodcraft exits outside the server role.
-- Confirm stable dependencies are present: BepInExPack V Rising 1.733.2 and VampireCommandFramework 0.10.4 for Bloodcraft 1.13.22.
+- Confirm stable dependencies are present: BepInExPack V Rising 1.733.2 and VampireCommandFramework 0.10.4 for Bloodcraft 1.13.26.
 - Check the BepInEx log for the first Bloodcraft exception.
-- Avoid mixing a prerelease DLL with stable documentation or dependency assumptions.
+- Keep the Bloodcraft package, documentation baseline, BepInEx dependencies, and backups on a recorded matching version.
 
 ## A system or command is unavailable
 
@@ -22,7 +22,7 @@ Bloodcraft works server-only; Eclipse is optional and must be installed on the c
 
 ## Progression looks duplicated after a restart
 
-Stable 1.13.22 predates a prerelease fix for duplicate Nightmare/Primal scaling across restarts. Disable the affected option and restore from a known-good backup if necessary; test the current upstream prerelease separately instead of substituting it silently.
+Bloodcraft 1.13.26 includes the persisted-unit guard for duplicate Nightmare/Primal scaling. If duplicate scaling is observed on 1.13.26, capture the exact package version, server log, mod list, affected unit, restart sequence, and save state before changing anything. Disable the affected option on a test copy and restore production only from a known-good backup.
 
 ## Familiar behavior
 

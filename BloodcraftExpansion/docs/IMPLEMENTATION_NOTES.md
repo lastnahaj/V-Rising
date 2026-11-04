@@ -3,7 +3,7 @@
 !!! expansion "BloodcraftExpansion Content"
     These notes define constraints for future custom implementation. No gameplay code is included in this documentation project.
 
-The stable Bloodcraft 1.13.22 source reviewed for this wiki does not document a public expansion API for third-party Bloodlines, Classes, or specializations. Future implementation should therefore begin with an explicit integration design rather than assuming hooks, services, data formats, or Eclipse messages.
+The stable Bloodcraft 1.13.26 source reviewed for this wiki does not document a public expansion API for third-party Bloodlines, Classes, or specializations. Future implementation should therefore begin with an explicit integration design rather than assuming hooks, services, data formats, or Eclipse messages.
 
 Key boundaries:
 
@@ -14,7 +14,9 @@ Key boundaries:
 - degrade safely when Bloodcraft or Eclipse versions do not match a tested integration;
 - never present a custom client panel or chat message as upstream Bloodcraft output.
 
-Implementation planning continues in the [BloodcraftExpansion Roadmap](custom/ROADMAP.md).
+The proposed dual-class model, server-authority contract, action-channel gate, persistence lifecycle, and dependency-failure behavior are defined in [Architecture Boundaries](custom/ARCHITECTURE.md). Content cannot move beyond Concept status until it satisfies the [Design Standards](custom/DESIGN-STANDARDS.md).
+
+Implementation sequencing continues in the [BloodcraftExpansion Roadmap](custom/ROADMAP.md).
 
 ---
 

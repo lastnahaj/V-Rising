@@ -1,8 +1,8 @@
 # Professions
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 Bloodcraft provides eight gathering and crafting professions. `ProfessionSystem` enables the feature, `ProfessionFactor` multiplies XP, and `DisabledProfessions` can disable named professions as a comma-separated list.

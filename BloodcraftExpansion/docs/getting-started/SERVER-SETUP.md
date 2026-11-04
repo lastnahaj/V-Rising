@@ -1,8 +1,8 @@
 # Server Setup
 
 !!! version "Upstream Bloodcraft Reference"
-    **Bloodcraft version:** 1.13.22 stable<br>
-    **Last verified:** 2026-08-23<br>
+    **Bloodcraft version:** 1.13.26 stable<br>
+    **Last verified:** 2026-11-02<br>
     This page documents upstream Bloodcraft, not BloodcraftExpansion custom features.
 
 Bloodcraft’s feature switches default to off for most major systems. Plan the progression model before enabling everything at once.
@@ -10,7 +10,7 @@ Bloodcraft’s feature switches default to off for most major systems. Plan the 
 ## Safe setup sequence
 
 1. Install and launch once.
-2. Confirm `Loaded [1.13.22]` and startup health in the server log.
+2. Confirm `Loaded [1.13.26]` and startup health in the server log.
 3. Stop the server and back up `BepInEx/config/io.zfolmt.Bloodcraft.cfg` plus `BepInEx/config/Bloodcraft/`.
 4. Enable foundational systems first: leveling, expertise, legacies, professions, classes, quests, and/or familiars.
 5. Enable prestige only with leveling; review the separate expertise and legacy prestige caps.
